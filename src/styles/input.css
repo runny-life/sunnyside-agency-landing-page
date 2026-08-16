@@ -19,20 +19,20 @@
 @layer theme {
   @theme {
     /* Color */
-    --colors-white: #fff;
-    --colors-black: #000;
-    --colors-red-400: #fe7766;
-    --colors-yellow-500: #fad400;
-    --colors-grey-400: #a7aaad;
-    --colors-grey-550: #808397;
-    --colors-grey-600: #5b636d;
-    --colors-green-300: #90d4c6;
-    --colors-green-500: #458d7e;
-    --colors-green-600: #3e7467;
-    --colors-green-800: #24554a;
-    --colors-blue-800: #19536c;
-    --colors-blue-950: #052c3b;
-    --colors-grey-950: #24303e;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-red-400: #fe7766;
+    --color-yellow-500: #fad400;
+    --color-grey-400: #a7aaad;
+    --color-grey-550: #808397;
+    --color-grey-600: #5b636d;
+    --color-green-300: #90d4c6;
+    --color-green-500: #458d7e;
+    --color-green-600: #3e7467;
+    --color-green-800: #24554a;
+    --color-blue-800: #19536c;
+    --color-blue-950: #052c3b;
+    --color-grey-950: #24303e;
     /* Fonts */
     --font-barlow: "Barlow", sans-serif;
     --font-fraunces: "Fraunces", sans-serif;
@@ -85,5 +85,15 @@
     --text-preset-12--line-height: 1.8;
     --text-preset-12--letter-spacing: 0px;
     --text-preset-12--font-weight: 600;
+  }
+}
+
+@layer components {
+  .menu-link {
+    @apply text-preset-10 font-barlow text-white hover:scale-90 transition-transform duration-300 inline-block;
+  }
+
+  .menu-link-button {
+    @apply text-preset-8 font-fraunces text-grey-950 uppercase w-35 h-14 bg-white rounded-[28px] flex items-center justify-center hover:bg-white/25 hover:text-white transition-colors duration-300;
   }
 }
