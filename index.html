@@ -134,5 +134,46 @@
         </a>
       </section>
     </div>
+    <main class="grid">
+      <section
+        class="grid lg:grid-cols-2"
+        aria-labelledby="transform-title"
+        aria-describedby="transform-description"
+      >
+        <picture class="order-1">
+          <source
+            media="(min-width: 1024px)"
+            srcset="/src/assets/images/desktop/image-transform.jpg"
+            width="720"
+            hidden="600"
+          />
+          <img
+            class="w-full"
+            src="/src/assets/images/mobile/image-transform.jpg"
+            alt=""
+            width="750"
+            height="624"
+            loading="lazy"
+          />
+        </picture>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title" id="transform-title">
+              Transform your brand
+            </h2>
+            <p class="card-description" id="transform-description">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a
+              class="group text-preset-8 uppercase font-fraunces relative lg:self-start button-decoration-line-1"
+              href="#"
+              >LEARN MORE</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

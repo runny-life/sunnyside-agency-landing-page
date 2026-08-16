@@ -96,4 +96,24 @@
   .menu-link-button {
     @apply text-preset-8 font-fraunces text-grey-950 uppercase w-35 h-14 bg-white rounded-[28px] flex items-center justify-center hover:bg-white/25 hover:text-white transition-colors duration-300;
   }
+
+  .button-decoration-line-1 {
+    @apply before:content-[''] before:absolute before:w-[calc(100%+8px*2)] before:h-2.5 before:bg-yellow-500/25 before:left-[50%] before:translate-x-[-50%] before:bottom-[15%] before:rounded-[28px] hover:before:bg-yellow-500 before:transition-colors before:duration-300 before:-z-10;
+  }
+
+  .card {
+    @apply flex flex-col items-center justify-center px-6 py-17;
+  }
+
+  .card-body {
+    @apply flex flex-col items-center justify-center gap-6 text-center md:text-start max-w-[28.188rem] lg:max-w-[27.813rem];
+  }
+
+  .card-title {
+    @apply text-preset-4 md:text-preset-3 font-fraunces;
+  }
+
+  .card-description {
+    @apply text-preset-10 font-barlow text-grey-550;
+  }
 }
