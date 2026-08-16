@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Barlow";
+  src: url("/src/assets/fonts/barlow-600.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/src/assets/fonts/fraunces-900.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+}
+
+@layer theme {
+  @theme {
+    /* Color */
+    --colors-white: #fff;
+    --colors-black: #000;
+    --colors-red-400: #fe7766;
+    --colors-yellow-500: #fad400;
+    --colors-grey-400: #a7aaad;
+    --colors-grey-550: #808397;
+    --colors-grey-600: #5b636d;
+    --colors-green-300: #90d4c6;
+    --colors-green-500: #458d7e;
+    --colors-green-600: #3e7467;
+    --colors-green-800: #24554a;
+    --colors-blue-800: #19536c;
+    --colors-blue-950: #052c3b;
+    --colors-grey-950: #24303e;
+    /* Fonts */
+    --font-barlow: "Barlow", sans-serif;
+    --font-fraunces: "Fraunces", sans-serif;
+    /* Text Prest */
+    --text-preset-1: 3.5rem;
+    --text-preset-1--line-height: 1.25;
+    --text-preset-1--letter-spacing: 0.16em;
+    --text-preset-1--font-weight: 900;
+    --text-preset-2: 2.625rem;
+    --text-preset-2--line-height: 1.25;
+    --text-preset-2--letter-spacing: 0.14em;
+    --text-preset-2--font-weight: 900;
+    --text-preset-3: 2.5rem;
+    --text-preset-3--line-height: 1.25;
+    --text-preset-3--letter-spacing: 0px;
+    --text-preset-3--font-weight: 900;
+    --text-preset-4: 2rem;
+    --text-preset-4--line-height: 1.25;
+    --text-preset-4--letter-spacing: 0px;
+    --text-preset-4--font-weight: 900;
+    --text-preset-5: 1.75rem;
+    --text-preset-5--line-height: 1.25;
+    --text-preset-5--letter-spacing: 0px;
+    --text-preset-5--font-weight: 900;
+    --text-preset-6: 1.25rem;
+    --text-preset-6--line-height: 1.25;
+    --text-preset-6--letter-spacing: 0.2em;
+    --text-preset-6--font-weight: 900;
+    --text-preset-7: 1.125rem;
+    --text-preset-7--line-height: 1.25;
+    --text-preset-7--letter-spacing: 0px;
+    --text-preset-7--font-weight: 900;
+    --text-preset-8: 0.938rem;
+    --text-preset-8--line-height: 1.65;
+    --text-preset-8--letter-spacing: 0.07em;
+    --text-preset-8--font-weight: 900;
+    --text-preset-9: 1.25rem;
+    --text-preset-9--line-height: 1.25;
+    --text-preset-9--letter-spacing: 0px;
+    --text-preset-9--font-weight: 600;
+    --text-preset-10: 1.125rem;
+    --text-preset-10--line-height: 1.65;
+    --text-preset-10--letter-spacing: 0px;
+    --text-preset-10--font-weight: 600;
+    --text-preset-11: 1rem;
+    --text-preset-11--line-height: 1.7;
+    --text-preset-11--letter-spacing: 0px;
+    --text-preset-11--font-weight: 600;
+    --text-preset-12: 0.875rem;
+    --text-preset-12--line-height: 1.8;
+    --text-preset-12--letter-spacing: 0px;
+    --text-preset-12--font-weight: 600;
+  }
+}

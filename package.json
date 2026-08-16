@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Sunnyside agency landing page coding challenge](preview.jpg)",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "styles": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runny-life/sunnyside-agency-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/runny-life/sunnyside-agency-landing-page/issues"
+  },
+  "homepage": "https://github.com/runny-life/sunnyside-agency-landing-page#readme"
+}
