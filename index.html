@@ -54,7 +54,7 @@
           </ul>
         </nav>
         <button
-          class="lg:hidden"
+          class="lg:hidden focus-visible:outline-2 focus-visible:outline-yellow-500 focus-visible:outline-offset-2"
           type="button"
           aria-label="Toggle menu"
           aria-expanded="false"
@@ -75,7 +75,7 @@
           </svg>
         </button>
         <dialog
-          class="container px-6 md:px-10 bg-transparent top-[calc(100%+1.625rem)] origin-top-right transition-transform duration-300 scale-0 open:scale-100 block opacity-0 invisible open:visible open:opacity-100"
+          class="container px-6 md:px-10 bg-transparent top-[calc(100%+1.625rem)] origin-top-right transition-transform duration-300 scale-0 open:scale-100 block opacity-0 invisible open:visible open:opacity-100 z-50"
           id="main-navigation"
           aria-label="Main navigation"
         >
@@ -144,7 +144,7 @@
         </h1>
         <a class="w-7.5 h-27" href="#main-content">
           <img
-            class="animate-bounce"
+            class="animate-bounce z-0"
             src="./src/assets/images/icon-arrow-down.svg"
             alt=""
             width="36"
@@ -570,5 +570,6 @@
         </li>
       </ul>
     </footer>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>

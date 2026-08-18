@@ -308,6 +308,12 @@
   .top-\[calc\(100\%\+1\.625rem\)\] {
     top: calc(100% + 1.625rem);
   }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-50 {
+    z-index: 50;
+  }
   .col-span-full {
     grid-column: 1 / -1;
   }
@@ -792,6 +798,16 @@
     .hover\:text-white:hover {
       color: var(--color-white);
     }
+  }
+  .focus-visible\:outline-2:focus-visible {
+    outline-style: var(--tw-outline-style);
+    outline-width: 2px;
+  }
+  .focus-visible\:outline-offset-2:focus-visible {
+    outline-offset: 2px;
+  }
+  .focus-visible\:outline-yellow-500:focus-visible {
+    outline-color: var(--color-yellow-500);
   }
   .focus-visible\:transition-none:focus-visible {
     transition-property: none;
