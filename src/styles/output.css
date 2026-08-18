@@ -291,6 +291,12 @@
   .h-27 {
     height: calc(var(--spacing) * 27);
   }
+  .h-full {
+    height: 100%;
+  }
+  .min-h-94 {
+    min-height: calc(var(--spacing) * 94);
+  }
   .min-h-150 {
     min-height: calc(var(--spacing) * 150);
   }
@@ -314,9 +320,6 @@
   }
   .max-w-150 {
     max-width: calc(var(--spacing) * 150);
-  }
-  .max-w-\[21\.25rem\] {
-    max-width: 21.25rem;
   }
   .flex-grow {
     flex-grow: 1;
@@ -345,6 +348,9 @@
   .resize {
     resize: both;
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -359,9 +365,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .justify-end {
-    justify-content: flex-end;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -400,12 +403,6 @@
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
   }
-  .bg-\[url\(\'\/src\/assets\/images\/desctop\/image-graphic-design\.jpg\'\)\] {
-    background-image: url('/src/assets/images/desctop/image-graphic-design.jpg');
-  }
-  .bg-\[url\(\'\/src\/assets\/images\/desktop\/image-graphic-design\.jpg\'\)\] {
-    background-image: url('/src/assets/images/desktop/image-graphic-design.jpg');
-  }
   .bg-\[url\(\'\/src\/assets\/images\/mobile\/image-graphic-design\.jpg\'\)\] {
     background-image: url('/src/assets/images/mobile/image-graphic-design.jpg');
   }
@@ -415,35 +412,11 @@
   .bg-\[url\(\'\/src\/assets\/images\/mobile\/image-photography\.jpg\'\)\] {
     background-image: url('/src/assets/images/mobile/image-photography.jpg');
   }
-  .bg-contain {
-    background-size: contain;
-  }
   .bg-cover {
     background-size: cover;
   }
-  .bg-size-\[50\%_50\%\] {
-    background-size: 50% 50%;
-  }
-  .bg-size-\[100\%_100\%\] {
-    background-size: 100% 100%;
-  }
-  .bg-\[100\%_100\%\] {
-    background-position: 100% 100%;
-  }
   .bg-center {
     background-position: center;
-  }
-  .bg-position-\[50\%_50\%\] {
-    background-position: 50% 50%;
-  }
-  .bg-position-\[50\%_100\%\] {
-    background-position: 50% 100%;
-  }
-  .bg-position-\[100\%_50\%\] {
-    background-position: 100% 50%;
-  }
-  .bg-position-\[100\%_100\%\] {
-    background-position: 100% 100%;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -474,12 +447,6 @@
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
-  }
-  .pb-4 {
-    padding-bottom: calc(var(--spacing) * 4);
-  }
-  .pb-4\.5 {
-    padding-bottom: calc(var(--spacing) * 4.5);
   }
   .pb-14 {
     padding-bottom: calc(var(--spacing) * 14);
@@ -620,6 +587,9 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:min-h-192\.5 {
+      min-height: calc(var(--spacing) * 192.5);
+    }
     .md\:gap-18 {
       gap: calc(var(--spacing) * 18);
     }
@@ -661,6 +631,9 @@
     .lg\:hidden {
       display: none;
     }
+    .lg\:min-h-111\.75 {
+      min-height: calc(var(--spacing) * 111.75);
+    }
     .lg\:max-w-278\.5 {
       max-width: calc(var(--spacing) * 278.5);
     }
@@ -669,6 +642,9 @@
     }
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     .lg\:gap-8 {
       gap: calc(var(--spacing) * 8);
@@ -681,9 +657,6 @@
     }
     .lg\:bg-\[url\(\'\/src\/assets\/images\/desktop\/image-header\.jpg\'\)\] {
       background-image: url('/src/assets/images/desktop/image-header.jpg');
-    }
-    .lg\:px-40\.5 {
-      padding-inline: calc(var(--spacing) * 40.5);
     }
     .lg\:py-40\.5 {
       padding-block: calc(var(--spacing) * 40.5);
@@ -864,6 +837,19 @@
     letter-spacing: var(--tw-tracking, var(--text-preset-10--letter-spacing));
     font-weight: var(--tw-font-weight, var(--text-preset-10--font-weight));
     color: var(--color-grey-550);
+  }
+}
+@layer utilities {
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 }
 @property --tw-scale-x {
