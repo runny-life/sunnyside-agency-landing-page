@@ -14,6 +14,9 @@
     --color-green-800: #24554a;
     --color-blue-800: #19536c;
     --color-blue-950: #052c3b;
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-950: oklch(13% 0.028 261.692);
     --color-white: #fff;
     --spacing: 0.25rem;
     --animate-bounce: bounce 1s infinite;
@@ -45,6 +48,14 @@
     --text-preset-5--line-height: 1.25;
     --text-preset-5--letter-spacing: 0px;
     --text-preset-5--font-weight: 900;
+    --text-preset-6: 1.25rem;
+    --text-preset-6--line-height: 1.25;
+    --text-preset-6--letter-spacing: 0.2em;
+    --text-preset-6--font-weight: 900;
+    --text-preset-7: 1.125rem;
+    --text-preset-7--line-height: 1.25;
+    --text-preset-7--letter-spacing: 0px;
+    --text-preset-7--font-weight: 900;
     --text-preset-8: 0.938rem;
     --text-preset-8--line-height: 1.65;
     --text-preset-8--letter-spacing: 0.07em;
@@ -61,6 +72,10 @@
     --text-preset-11--line-height: 1.7;
     --text-preset-11--letter-spacing: 0px;
     --text-preset-11--font-weight: 600;
+    --text-preset-12: 0.875rem;
+    --text-preset-12--line-height: 1.8;
+    --text-preset-12--letter-spacing: 0px;
+    --text-preset-12--font-weight: 600;
   }
 }
 @layer base {
@@ -266,6 +281,10 @@
   .table {
     display: table;
   }
+  .size-18 {
+    width: calc(var(--spacing) * 18);
+    height: calc(var(--spacing) * 18);
+  }
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
@@ -292,6 +311,9 @@
   }
   .max-w-85 {
     max-width: calc(var(--spacing) * 85);
+  }
+  .max-w-150 {
+    max-width: calc(var(--spacing) * 150);
   }
   .max-w-\[21\.25rem\] {
     max-width: 21.25rem;
@@ -341,14 +363,29 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
+  }
+  .gap-14\.5 {
+    gap: calc(var(--spacing) * 14.5);
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded-\[28px\] {
     border-radius: 28px;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -411,6 +448,9 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -423,11 +463,23 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-13 {
+    padding-block: calc(var(--spacing) * 13);
+  }
+  .py-13\.75 {
+    padding-block: calc(var(--spacing) * 13.75);
+  }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-4\.5 {
+    padding-bottom: calc(var(--spacing) * 4.5);
   }
   .pb-14 {
     padding-bottom: calc(var(--spacing) * 14);
@@ -453,6 +505,18 @@
     letter-spacing: var(--tw-tracking, var(--text-preset-5--letter-spacing));
     font-weight: var(--tw-font-weight, var(--text-preset-5--font-weight));
   }
+  .text-preset-6 {
+    font-size: var(--text-preset-6);
+    line-height: var(--tw-leading, var(--text-preset-6--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-preset-6--letter-spacing));
+    font-weight: var(--tw-font-weight, var(--text-preset-6--font-weight));
+  }
+  .text-preset-7 {
+    font-size: var(--text-preset-7);
+    line-height: var(--tw-leading, var(--text-preset-7--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-preset-7--letter-spacing));
+    font-weight: var(--tw-font-weight, var(--text-preset-7--font-weight));
+  }
   .text-preset-8 {
     font-size: var(--text-preset-8);
     line-height: var(--tw-leading, var(--text-preset-8--line-height));
@@ -465,17 +529,38 @@
     letter-spacing: var(--tw-tracking, var(--text-preset-9--letter-spacing));
     font-weight: var(--tw-font-weight, var(--text-preset-9--font-weight));
   }
+  .text-preset-10 {
+    font-size: var(--text-preset-10);
+    line-height: var(--tw-leading, var(--text-preset-10--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-preset-10--letter-spacing));
+    font-weight: var(--tw-font-weight, var(--text-preset-10--font-weight));
+  }
   .text-preset-11 {
     font-size: var(--text-preset-11);
     line-height: var(--tw-leading, var(--text-preset-11--line-height));
     letter-spacing: var(--tw-tracking, var(--text-preset-11--letter-spacing));
     font-weight: var(--tw-font-weight, var(--text-preset-11--font-weight));
   }
+  .text-preset-12 {
+    font-size: var(--text-preset-12);
+    line-height: var(--tw-leading, var(--text-preset-12--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-preset-12--letter-spacing));
+    font-weight: var(--tw-font-weight, var(--text-preset-12--font-weight));
+  }
   .text-blue-800 {
     color: var(--color-blue-800);
   }
   .text-blue-950 {
     color: var(--color-blue-950);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-950 {
+    color: var(--color-gray-950);
   }
   .text-green-600 {
     color: var(--color-green-600);
@@ -538,6 +623,9 @@
     .md\:gap-18 {
       gap: calc(var(--spacing) * 18);
     }
+    .md\:gap-20 {
+      gap: calc(var(--spacing) * 20);
+    }
     .md\:bg-\[url\(\'\/src\/assets\/images\/desktop\/image-graphic-design\.jpg\'\)\] {
       background-image: url('/src/assets/images/desktop/image-graphic-design.jpg');
     }
@@ -573,8 +661,17 @@
     .lg\:hidden {
       display: none;
     }
+    .lg\:max-w-278\.5 {
+      max-width: calc(var(--spacing) * 278.5);
+    }
     .lg\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:gap-8 {
+      gap: calc(var(--spacing) * 8);
     }
     .lg\:gap-24 {
       gap: calc(var(--spacing) * 24);
@@ -584,6 +681,12 @@
     }
     .lg\:bg-\[url\(\'\/src\/assets\/images\/desktop\/image-header\.jpg\'\)\] {
       background-image: url('/src/assets/images/desktop/image-header.jpg');
+    }
+    .lg\:px-40\.5 {
+      padding-inline: calc(var(--spacing) * 40.5);
+    }
+    .lg\:py-40\.5 {
+      padding-block: calc(var(--spacing) * 40.5);
     }
     .lg\:pt-24 {
       padding-top: calc(var(--spacing) * 24);
