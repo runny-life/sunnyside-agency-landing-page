@@ -776,6 +776,57 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .before\:absolute::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  .before\:bottom-\[15\%\]::before {
+    content: var(--tw-content);
+    bottom: 15%;
+  }
+  .before\:left-\[50\%\]::before {
+    content: var(--tw-content);
+    left: 50%;
+  }
+  .before\:h-2::before {
+    content: var(--tw-content);
+    height: calc(var(--spacing) * 2);
+  }
+  .before\:w-\[calc\(100\%\+8px\*2\)\]::before {
+    content: var(--tw-content);
+    width: calc(100% + 8px * 2);
+  }
+  .before\:translate-x-\[-50\%\]::before {
+    content: var(--tw-content);
+    --tw-translate-x: -50%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .before\:rounded-\[28px\]::before {
+    content: var(--tw-content);
+    border-radius: 28px;
+  }
+  .before\:bg-yellow-500\/25::before {
+    content: var(--tw-content);
+    background-color: color-mix(in srgb, #fad400 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-yellow-500) 25%, transparent);
+    }
+  }
+  .before\:transition-colors::before {
+    content: var(--tw-content);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .before\:duration-300::before {
+    content: var(--tw-content);
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .before\:content-\[\'\'\]::before {
+    --tw-content: '';
+    content: var(--tw-content);
+  }
   .open\:visible:is([open], :popover-open, :open) {
     visibility: visible;
   }
@@ -797,6 +848,10 @@
     }
     .hover\:text-white:hover {
       color: var(--color-white);
+    }
+    .hover\:before\:bg-yellow-500:hover::before {
+      content: var(--tw-content);
+      background-color: var(--color-yellow-500);
     }
   }
   .focus-visible\:outline-2:focus-visible {
